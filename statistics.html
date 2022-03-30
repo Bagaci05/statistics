@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/app.css">
+    <script src="Scripts/table.js" defer></script>
+    <title>Statisztikák</title>
+    <link rel="icon" type="image/png" href="Images/statistics-icon.png">
+</head>
+<body>
+    <table>
+        <thead>
+            <th></th>
+            <th>1.</th>
+            <th>2.</th>
+            <th>3.</th>
+            <th>4.</th>
+            <th>5.</th>
+            <th>6.</th>
+            <th>7.</th>
+            <th>8.</th>
+            <th>9.</th>
+            <th>10.</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>
+                    <p>Számok</p>
+                </th>
+                <td>
+                    <input type="number" value="1" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="2" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="3" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="4" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="5" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="6" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="7" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="8" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="9" min="0" data-szamok>
+                </td>
+                <td>
+                    <input type="number" value="10" min="0" data-szamok>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p>Gyakoriságok</p>
+                </th>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+                <td>
+                    <input type="number" value="0" min="0" data-gyakorisagok>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p>Relatív Gyakoriság<p>
+                </th>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+                <td class="results">
+                    <p data-rel-gyak-text></p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p>Medián</p>
+                </th>
+                <td colspan="10" class="results">
+                    <p id="median-text"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p>Módusz</p>
+                </th>
+                <td colspan="10" class="results">
+                    <p id="modusz-text"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p>Terjedelem</p>
+                </th>
+                <td colspan="10" class="results">
+                    <p id="terjedelem-text"></p>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <p>Átlag</p>
+                </th>
+                <td colspan="10" class="results">
+                    <p id="atlag-text"></p>
+                </td>
+            </tr>
+            <tr class="szoras">
+                <th>
+                    <p>Szórás</p>
+                </th>
+                <td colspan="10" class="results">
+                    <p id="szoras-text"></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button id="calc-btn" onclick="calculator()">Számológép</button>
+</body>
+</html>

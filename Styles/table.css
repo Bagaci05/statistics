@@ -1,0 +1,62 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+HTML {
+    background: 
+            linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 90.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 90.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 90.71%);
+}
+
+table {
+    margin: auto;
+    margin-top: 15vh;
+    padding: 40px;
+    font-size: 20px;
+}
+
+input {
+    font-size: 20px;
+    width: 100px;
+    text-align: end;
+}
+
+.results {
+    text-align: center;
+}
+
+th {
+    margin-bottom: 10px;
+}
+
+tr, input, p, td, .results{
+    margin: 10px 0px;
+}
+
+.szoras, .szoras td, .szoras td p, .szoras.results{
+    margin-bottom: 0px;
+}
+th > p{
+    padding-right: 50px;
+}
+
+#calc-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 3%;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    padding: .6em;
+    border-radius: 0;
+    color: rgb(65, 65, 65);
+    background-color: rgb(255, 255, 255, .30);
+    border: 1px solid black;
+}
+
+#calc-btn:hover {
+    margin-top: 2.75%;
+    font-size: 25px;
+    background-color: rgba(255, 255, 255, .9);
+}
